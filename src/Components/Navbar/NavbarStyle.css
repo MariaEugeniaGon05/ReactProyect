@@ -1,0 +1,23 @@
+.logo-width {
+  width: 3rem;
+  height: 3rem;
+}
+
+body {
+  background-color: #cdb4db;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (min-width: 992px) {
+  .cart-container {
+    justify-content: flex-end;
+  }
+}
