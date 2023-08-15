@@ -2,7 +2,7 @@ const productos = [
   {
     title: "212 ViP Carolina Herrera 50ml",
     id: 1,
-    limit: 100,
+    stock: 100,
     description:
       "Carolina Herrera 212 VIP Women es una fragancia dulce y elegante, inspirada en la vida nocturna de Nueva York y diseñada para la mujer segura de sí misma y VIP. Con notas que incluyen el ron, almizcle y la vainilla.",
     img: "https://tiendacdn.farmashop.com.uy/media/catalog/product/cache/c385976bc54d78dff661f3a8d562b253/5/0/50180_12.jpg",

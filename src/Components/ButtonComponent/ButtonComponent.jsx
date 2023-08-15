@@ -1,4 +1,4 @@
-import "./ButtonComponent.css";
+import "./ButtonStyle.css";
 
 function ButtonComponent(props) {
   const { children, colorFondo } = props;
@@ -6,10 +6,9 @@ function ButtonComponent(props) {
   const styleButton = {
     backgroundColor: colorFondo,
   };
-
   return (
     <>
-      <button style={styleButton} className="btn">
+      <button onClick={props.onTouch} style={styleButton} className="btn">
         {children}
       </button>
     </>
