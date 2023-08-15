@@ -1,3 +1,15 @@
+Buenas, soy Maria Eugenia Goncalves, este es el proyecto final para ReactJS de CoderHouse. la base del proyecto es un ecommerce de perfumes.
+
+Datos:
+
+GitHub:
+Curso: React / CoderHouse comision 43305
+Profesor: Santiago Salkin
+Tutor: Juan Manuel Maroñas
+
+Frontend:
+ReactJs
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +80,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # ReactProyect

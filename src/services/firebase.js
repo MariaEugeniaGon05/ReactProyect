@@ -26,7 +26,7 @@ const appFirebase = initializeApp(firebaseConfig);
 
 const db = getFirestore(appFirebase);
 
-// 2 Implementar async function getData()
+//Implementar async function getData()
 
 async function getData() {
   const productosRef = collection(db, "productos");
@@ -36,14 +36,11 @@ async function getData() {
     (item) => {
       return { ...item.data(), id: item.id };
     }
-    /* {let productFullData = item.data();
-    productFullData.id = item.id;
-    return productFullData; }*/
   );
   return docsData;
 }
 
-//  3.Implementar getProductData
+//Implementar getProductData
 async function getProductData(id) {
   const docRef = doc(db, "productos", id);
   const docSnapshot = await getDoc(docRef);
@@ -55,7 +52,7 @@ async function getProductData(id) {
   }
 }
 
-// * 4 Implementar getCategoryData
+//Implementar getCategoryData
 async function getCategoryData() {
   const productosRef = collection(db, "productos");
   // cambiamos esto
@@ -164,15 +161,6 @@ async function _exportProducts() {
       category: "perfumes",
     },
   ];
-
-  // for ... of
-  // productos.forEach( item => {})
-  /*  for(let item of productos){
-    console.log(item)
-    const docRef = doc(db, "products", String(item.id))
-    const docCreated = await setDoc(docRef, item);
-    console.log("Doc created with id:", docCreated.id)
-  } */
 
   for (let item of productos) {
     const collectionRef = collection(db, "productos");

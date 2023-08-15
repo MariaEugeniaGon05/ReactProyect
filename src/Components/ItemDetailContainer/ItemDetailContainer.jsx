@@ -35,7 +35,6 @@ function ItemDetailContainer() {
     setIsAddedToCart(true);
   }
 
-  /* Separar esto en <ItemDetail .../> */
   return (
     <div style={{ marginBottom: "100px" }}>
       <Link to="/product/2">Ir al item 2</Link>
@@ -50,14 +49,14 @@ function ItemDetailContainer() {
         <small>{product.description}</small>
       </div>
       {product.stock > 0 ? (
-        /* Si tenemos STOCK */
+        // En STOCK 
         isAddedToCart ? (
           <a href="/cart">Ir al carrito</a>
         ) : (
           <ItemCount stock={maxItems} onConfirm={handleAddToCart} />
         )
       ) : (
-        // END si tenemos stock
+        // Sin stock
         <p>No hay stock disponible</p>
       )}
       {itemInCart && (
