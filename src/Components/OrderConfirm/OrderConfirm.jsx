@@ -16,11 +16,11 @@ function OrderConfirm() {
 
   return (
     <div>
-      <h1>Gracias por tu compra! </h1>
+      <h1>Gracias por comprar! </h1>
       {orderData !== null ? (
         <div>
           <p>
-            Tus productos comprados:
+            Productos seleccionados:
             {orderData.items.map((item) => {
               return (
                 <small>

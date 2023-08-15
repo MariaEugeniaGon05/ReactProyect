@@ -34,7 +34,6 @@ function Checkout() {
   function onInputChange(evt) {
     const value = evt.target.value;
     const field = evt.target.name;
-    //buyer["firstname"] -> buyer.firstname
     const newState = { ...buyer };
     newState[field] = value;
     setBuyer(newState);
@@ -51,7 +50,7 @@ function Checkout() {
 
   return (
     <form>
-      <h2>Completa tus datos para completar la compra🛍</h2>
+      <h2>Completa tus datos para completar la compra</h2>
 
       <div style={{ display: "flex", marginBottom: 8 }}>
         <label htmlFor="lastname" style={{ width: "100px", marginRight: 4 }}>

@@ -18,7 +18,7 @@ function Item(props) {
         <small>{description}</small>
       </div>
       <Link to={`/product/${id}`}>
-        <ButtonComponent colorFondo="purple">Ver Producto</ButtonComponent>
+        <ButtonComponent colorFondo="black">Ver Producto</ButtonComponent>
       </Link>
     </div>
   );

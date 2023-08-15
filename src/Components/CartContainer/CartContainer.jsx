@@ -9,10 +9,13 @@ function CartContainer() {
 
   return (
     <div>
-      <h1>Cart</h1>
+      <h1>Carrito</h1>
       {cart.map((item) => (
         <div key={item}>
           {console.log(item.id)}
+          <div>
+            <img width={600} src={item.img} alt="imagen"></img>
+          </div>
           <h2>{item.title}</h2>
           <p>Precio unitario: ${item.price}</p>
           <p>Cantidad a comprar{item.count}</p>
@@ -21,7 +24,7 @@ function CartContainer() {
         </div>
       ))}
       <br />
-      <div>Total de la compra: $999</div>
+      <div>Total a pagar: $</div>
       <Link to="/checkout">Comprar</Link>
     </div>
   );
